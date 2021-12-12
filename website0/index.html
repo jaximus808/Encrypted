@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>SusipicousDuck?</title>
+    </head>
+    <body>
+        <h1>It Now Begins</h1>
+        <h2>Decipher This RSA Hash: G6YI8VFvodrv5+bvCibslH1V+2d/zhSPT9Y9swCYLxH6AnVHjdRicbpft3eGpl+ksXKfLT8JIHEB1zSHM0nirUwdRRqxnfSAUmMHK62UCYG25Ul9NHdpj9abxH/970awgqPzOGn5krX7IaC2ye5GRX8WAWGwKrQCd5pI/PEZwDc=</h2>
+        <p>Put the correct plaintext string and click enter for the next instructions</p>
+        <input type="text" id = "plainTextInput">
+        <button onclick="HashCheck()">Check</button>
+        <p id="apiLink"></p>
+        <script>
+            const HashCheck = () =>
+            {
+                console.log("Hit")
+                if(document.getElementById("plainTextInput").value == "QWUEhdiqwdqwuiQW21312JQIU8")
+                {
+                    document.getElementById("apiLink").innerHTML = "the link do this later";
+                }
+                else 
+                {
+                    document.getElementById("apiLink").innerHTML = "Sorry That's Wrong :(";
+                }
+            }
+        </script>
+    </body>
+</html>
